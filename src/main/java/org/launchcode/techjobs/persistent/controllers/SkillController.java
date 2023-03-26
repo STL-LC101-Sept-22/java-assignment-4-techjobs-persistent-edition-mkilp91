@@ -26,10 +26,10 @@ public class SkillController {
         return "skills/add";
     }
 
-    @GetMapping
+    @GetMapping("")
     public String index(Model model){
         model.addAttribute("skills", skillRepository.findAll());
-        return "skill/index";
+        return "skills/index";
     }
 
     @PostMapping("add")
